@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Técnico - FrontEnd</title>
+
+  <!-- Importação de Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <!-- Importação de arquivo javascript -->
+  <link href="css/style.css?v=01" rel="stylesheet" />
+
+  <!-- Importação de arquivo javascript -->
+  <script defer src="js/script.js?v=01"></script>
+
+</head>
+
+<body>
+  <section>
+    <div>
+      <h2 class="title">QUAL É O NÚMERO?</h2>
+      <p class="border"></p>
+    </div>
+    <div class="show-message">
+      <h5>Você acertou!!!!</h5>
+    </div>
+    <div class="container">
+      <div class="displayOne" id="one">
+        <div class="segment A1"></div>
+        <div class="segment B1"></div>
+        <div class="segment C1"></div>
+        <div class="segment D1"></div>
+        <div class="segment E1"></div>
+        <div class="segment F1"></div>
+        <div class="segment G1"></div>
+      </div>
+      <div class="displayTwo" id="two">
+        <div class="segment A2"></div>
+        <div class="segment B2"></div>
+        <div class="segment C2"></div>
+        <div class="segment D2"></div>
+        <div class="segment E2"></div>
+        <div class="segment F2"></div>
+        <div class="segment G2"></div>
+      </div>
+      <div class="displayThree" id="three">
+        <div class="segment A3"></div>
+        <div class="segment B3"></div>
+        <div class="segment C3"></div>
+        <div class="segment D3"></div>
+        <div class="segment E3"></div>
+        <div class="segment F3"></div>
+        <div class="segment G3"></div>
+      </div>
+    </div>
+    <div class="container-button">
+      <button class="button-new-start" type="submit"><i class="bi bi-arrow-clockwise"></i>NOVA PARTIDA</button>
+    </div>
+    <div>
+      <form method="post">
+        <div>
+          <input class="input-number" type="text" id="number">
+          <button class="button-number" type="button" onclick="findNumber()">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
