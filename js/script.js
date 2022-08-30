@@ -23,6 +23,11 @@ window.onload = function () {
       document.querySelector(".error").style.display = "block";
       document.querySelector(".button-new-start").style.display = "block";
       document.querySelector('#button-send').disabled = true;
+      document.querySelector('#number').disabled = true;
+      var elements = document.getElementsByClassName('segment'); 
+      for(var i = 0; i < elements.length; i++){
+        elements[i].style.backgroundColor = "#CC3300";
+      }
       displayThree.two();
       displayTwo.zero();
       displayOne.five();
@@ -40,276 +45,303 @@ window.onload = function () {
   var displayOne = {
     zero: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".E1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".E1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
     },
     one: function () {
       this.lightsOut();
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
     },
     two: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".E1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
-      document.querySelector(".F1").style.display = "none";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".E1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
+      // document.querySelector(".F1").style.opacity = 0.1;
     },
     three: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     four: function () {
       this.lightsOut();
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     five: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     six: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".E1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".E1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     seven: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
     },
     eight: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".E1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".E1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     nine: function () {
       this.lightsOut();
-      document.querySelector(".A1").style.display = "block";
-      document.querySelector(".B1").style.display = "block";
-      document.querySelector(".C1").style.display = "block";
-      document.querySelector(".D1").style.display = "block";
-      document.querySelector(".F1").style.display = "block";
-      document.querySelector(".G1").style.display = "block";
+      document.querySelector(".A1").style.opacity = 1;
+      document.querySelector(".B1").style.opacity = 1;
+      document.querySelector(".C1").style.opacity = 1;
+      document.querySelector(".D1").style.opacity = 1;
+      document.querySelector(".F1").style.opacity = 1;
+      document.querySelector(".G1").style.opacity = 1;
     },
     lightsOut: function () {
-      document.querySelector(".A1").style.display = "none";
-      document.querySelector(".B1").style.display = "none";
-      document.querySelector(".C1").style.display = "none";
-      document.querySelector(".D1").style.display = "none";
-      document.querySelector(".E1").style.display = "none";
-      document.querySelector(".G1").style.display = "none";
-      document.querySelector(".F1").style.display = "none";
+      document.querySelector(".A1").style.opacity = 0.1;
+      document.querySelector(".B1").style.opacity = 0.1;
+      document.querySelector(".C1").style.opacity = 0.1;
+      document.querySelector(".D1").style.opacity = 0.1;
+      document.querySelector(".E1").style.opacity = 0.1;
+      document.querySelector(".F1").style.opacity = 0.1;
+      document.querySelector(".G1").style.opacity = 0.1;
+    },
+    turnOff: function () {
+      document.querySelector(".A1").style.opacity = 0;
+      document.querySelector(".B1").style.opacity = 0;
+      document.querySelector(".C1").style.opacity = 0;
+      document.querySelector(".D1").style.opacity = 0;
+      document.querySelector(".E1").style.opacity = 0;
+      document.querySelector(".F1").style.opacity = 0;
+      document.querySelector(".G1").style.opacity = 0;
     }
   };
 
   var displayTwo = {
     zero: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".E2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".E2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
     },
     one: function () {
       this.lightsOut();
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
     },
     two: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".E2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
-      document.querySelector(".F2").style.display = "none";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".E2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
+      // document.querySelector(".F2").style.opacity = 1;
     },
     three: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     four: function () {
       this.lightsOut();
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     five: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     six: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".E2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".E2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     seven: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
     },
     eight: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".E2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".E2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     nine: function () {
       this.lightsOut();
-      document.querySelector(".A2").style.display = "block";
-      document.querySelector(".B2").style.display = "block";
-      document.querySelector(".C2").style.display = "block";
-      document.querySelector(".D2").style.display = "block";
-      document.querySelector(".F2").style.display = "block";
-      document.querySelector(".G2").style.display = "block";
+      document.querySelector(".A2").style.opacity = 1;
+      document.querySelector(".B2").style.opacity = 1;
+      document.querySelector(".C2").style.opacity = 1;
+      document.querySelector(".D2").style.opacity = 1;
+      document.querySelector(".F2").style.opacity = 1;
+      document.querySelector(".G2").style.opacity = 1;
     },
     lightsOut: function () {
-      document.querySelector(".A2").style.display = "none";
-      document.querySelector(".B2").style.display = "none";
-      document.querySelector(".C2").style.display = "none";
-      document.querySelector(".D2").style.display = "none";
-      document.querySelector(".E2").style.display = "none";
-      document.querySelector(".G2").style.display = "none";
-      document.querySelector(".F2").style.display = "none";
+      document.querySelector(".A2").style.opacity = 0.1;
+      document.querySelector(".B2").style.opacity = 0.1;
+      document.querySelector(".C2").style.opacity = 0.1;
+      document.querySelector(".D2").style.opacity = 0.1;
+      document.querySelector(".E2").style.opacity = 0.1;
+      document.querySelector(".F2").style.opacity = 0.1;
+      document.querySelector(".G2").style.opacity = 0.1;
+    },
+    turnOff: function () {
+      document.querySelector(".A2").style.opacity = 0;
+      document.querySelector(".B2").style.opacity = 0;
+      document.querySelector(".C2").style.opacity = 0;
+      document.querySelector(".D2").style.opacity = 0;
+      document.querySelector(".E2").style.opacity = 0;
+      document.querySelector(".F2").style.opacity = 0;
+      document.querySelector(".G2").style.opacity = 0;
     }
   };
   
   var displayThree = {
     zero: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".E3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".E3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
     },
     one: function () {
       this.lightsOut();
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
     },
     two: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".E3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
-      document.querySelector(".F3").style.display = "none";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".E3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
+      // document.querySelector(".F3").style.display = "none";
     },
     three: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     four: function () {
       this.lightsOut();
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     five: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     six: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".E3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".E3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     seven: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
     },
     eight: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".E3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".E3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     nine: function () {
       this.lightsOut();
-      document.querySelector(".A3").style.display = "block";
-      document.querySelector(".B3").style.display = "block";
-      document.querySelector(".C3").style.display = "block";
-      document.querySelector(".D3").style.display = "block";
-      document.querySelector(".F3").style.display = "block";
-      document.querySelector(".G3").style.display = "block";
+      document.querySelector(".A3").style.opacity = 1;
+      document.querySelector(".B3").style.opacity = 1;
+      document.querySelector(".C3").style.opacity = 1;
+      document.querySelector(".D3").style.opacity = 1;
+      document.querySelector(".F3").style.opacity = 1;
+      document.querySelector(".G3").style.opacity = 1;
     },
     lightsOut: function () {
-      document.querySelector(".A3").style.display = "none";
-      document.querySelector(".B3").style.display = "none";
-      document.querySelector(".C3").style.display = "none";
-      document.querySelector(".D3").style.display = "none";
-      document.querySelector(".E3").style.display = "none";
-      document.querySelector(".G3").style.display = "none";
-      document.querySelector(".F3").style.display = "none";
+      document.querySelector(".A3").style.opacity = 0.1;
+      document.querySelector(".B3").style.opacity = 0.1;
+      document.querySelector(".C3").style.opacity = 0.1;
+      document.querySelector(".D3").style.opacity = 0.1;
+      document.querySelector(".E3").style.opacity = 0.1;
+      document.querySelector(".F3").style.opacity = 0.1;
+      document.querySelector(".G3").style.opacity = 0.1;
+    },
+    turnOff: function () {
+      document.querySelector(".A3").style.opacity = 0;
+      document.querySelector(".B3").style.opacity = 0;
+      document.querySelector(".C3").style.opacity = 0;
+      document.querySelector(".D3").style.opacity = 0;
+      document.querySelector(".E3").style.opacity = 0;
+      document.querySelector(".G3").style.opacity = 0;
+      document.querySelector(".F3").style.opacity = 0;
     }
   };
 
@@ -324,17 +356,17 @@ function findNumber() {
   let separateNumbers = [];
   separateNumbers = inputValue.split("");
   let valueSortNumber = parseInt(inputValue)
-  
+  console.log(valueSortNumber)
   //Verificando se o número digitado pelo usuario ultrapassa o valor máximo de 300 ou é menor que 1
-  if(valueSortNumber > 300 && valueSortNumber < 1){
+  if(valueSortNumber > 300 || valueSortNumber < 1){
     document.querySelector(".xd-message").classList.remove('hide')
     document.querySelector(".xd-message").style.display = "flex";
   }
 
   //Verificando se o número digitado pelo usuario possui apenas um número
-  if(separateNumbers.length == "1" && valueSortNumber <= 300){
-    displayOne.lightsOut();
-    displayTwo.lightsOut();
+  if(separateNumbers.length == "1" && (valueSortNumber <= 300 && valueSortNumber >= 1)){
+    displayOne.turnOff();
+    displayTwo.turnOff();
     if(separateNumbers[0] != undefined || separateNumbers[0] != ""){
       if(separateNumbers[0] == 1) displayThree.one();
       if(separateNumbers[0] == 2) displayThree.two();
@@ -349,8 +381,8 @@ function findNumber() {
     }
   }
   //Verificando se o número digitado pelo usuario possui dois números
-  if(separateNumbers.length == "2" && valueSortNumber <= 300){
-    displayOne.lightsOut();
+  if(separateNumbers.length == "2" && (valueSortNumber <= 300 && valueSortNumber >= 1)){
+    displayOne.turnOff();
     if(separateNumbers[0] != undefined || separateNumbers[0] != ""){
       if(separateNumbers[0] == 1) displayTwo.one();
       if(separateNumbers[0] == 2) displayTwo.two();
@@ -378,7 +410,7 @@ function findNumber() {
   }
 
   //Verificando se o número digitado pelo usuario possui três números
-  if(separateNumbers.length == "3" && valueSortNumber <= 300){
+  if(separateNumbers.length == "3" && (valueSortNumber <= 300 && valueSortNumber >= 1)){
     if(separateNumbers[0] != undefined || separateNumbers[2] != ""){
       if(separateNumbers[0] == 1) displayOne.one();
       if(separateNumbers[0] == 2) displayOne.two();
@@ -418,24 +450,29 @@ function findNumber() {
   }
 
   //Verifica se o valor digitado pelo usuário é equivalente ao sorteado pela requisição
-  if(valueSortNumber == sortNumber && valueSortNumber <= 300){
+  if(valueSortNumber == sortNumber && (valueSortNumber <= 300 && valueSortNumber >= 1)){
     document.querySelector(".bigger-than").style.display = "none";
     document.querySelector(".smaller-than").style.display = "none";
     document.querySelector(".error").style.display = "none";
     document.querySelector(".you-won").style.display = "block";
     document.querySelector('#button-send').disabled = true;
+    document.querySelector('#number').disabled = true;
     document.querySelector(".button-new-start").style.display = "block";
     document.querySelector(".input-number").value = "";
+    var elements = document.getElementsByClassName('segment'); 
+      for(var i = 0; i < elements.length; i++){
+        elements[i].style.backgroundColor = "#32BF00";
+      }
   }
-  if( valueSortNumber < sortNumber && valueSortNumber <= 300){      //Verifica se o valor digitado pelo usuário é 
-    document.querySelector(".bigger-than").style.display = "block"; //menor que o sorteado pela requisição
-    document.querySelector(".smaller-than").style.display = "none";
+  if( valueSortNumber < sortNumber && (valueSortNumber <= 300 && valueSortNumber >= 1)){      
+    document.querySelector(".bigger-than").style.display = "block";   //Verifica se o valor digitado pelo usuário é 
+    document.querySelector(".smaller-than").style.display = "none";   //menor que o sorteado pela requisição
     document.querySelector(".error").style.display = "none";
     document.querySelector(".you-won").style.display = "none";
     document.querySelector(".input-number").value = "";
-  }else if( valueSortNumber > sortNumber && valueSortNumber <= 300){//Verifica se o valor digitado pelo usuário é 
-    document.querySelector(".bigger-than").style.display = "none";  //maior que o sorteado pela requisição
-    document.querySelector(".smaller-than").style.display = "block";
+  }else if( valueSortNumber > sortNumber && (valueSortNumber <= 300 && valueSortNumber >= 1)){
+    document.querySelector(".bigger-than").style.display = "none";    //Verifica se o valor digitado pelo usuário é 
+    document.querySelector(".smaller-than").style.display = "block";  //maior que o sorteado pela requisição
     document.querySelector(".error").style.display = "none";
     document.querySelector(".you-won").style.display = "none";
     document.querySelector(".input-number").value = "";
@@ -461,5 +498,6 @@ var closesIcon = document.querySelectorAll('.xd-message .close-icon');
   closesIcon.forEach(function(closeIcon) {
     closeIcon.addEventListener('click', function() {
       this.parentNode.parentNode.classList.add('hide');
+      document.querySelector(".input-number").value = "";
     });
   });
