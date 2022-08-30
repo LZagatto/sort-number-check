@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,7 @@
   <!-- Importação de arquivo javascript -->
   <script defer src="js/script.js?v=01"></script>
 
+
 </head>
 
 <body>
@@ -25,7 +26,10 @@
       <p class="border"></p>
     </div>
     <div class="show-message">
-      <h5>Você acertou!!!!</h5>
+      <h5 class="you-won">Você acertou!!!!</h5>
+      <h5 class="bigger-than">É maior</h5>
+      <h5 class="smaller-than">É menor</h5>
+      <h5 class="error">ERRO</h5>
     </div>
     <div class="container">
       <div class="displayOne" id="one">
@@ -57,17 +61,29 @@
       </div>
     </div>
     <div class="container-button">
-      <button class="button-new-start" type="submit"><i class="bi bi-arrow-clockwise"></i>NOVA PARTIDA</button>
+      <button class="button-new-start" type="submit" onClick="window.location.reload();"><i class="bi bi-arrow-clockwise"></i>NOVA PARTIDA</button>
     </div>
     <div>
-      <form method="post">
+      <form>
         <div>
-          <input class="input-number" type="text" id="number">
-          <button class="button-number" type="button" onclick="findNumber()">Enviar</button>
+          <input class="input-number" type="number" id="number" placeholder="Digite o palpite" onkeypress="doNothing()" min="1" max="300" required>
+          <button id="button-send" class="button-number" type="button" onclick="findNumber()">ENVIAR</button>
         </div>
       </form>
     </div>
+    <div class="xd-message msg-warning">
+      <div class="xd-message-icon">
+        <i class="bi bi-exclamation-triangle"></i>
+      </div>
+      <div class="xd-message-content">
+        <p>Limite para o palpite de 1 a 300. Por favor insira novamente o valor!</p>
+      </div>
+      <a href="#" class="xd-message-close">
+        <i class="bi bi-x-lg close-icon"></i>
+      </a>
+    </div>
   </section>
+
 
 </body>
 
