@@ -12,7 +12,7 @@ window.onload = function () {
     * funções do jogo.
     * Foi tratado também a tela de erro quando é retornado StatusCode = 502
   */
-  var xhr = new XMLHttpRequest();
+  let xhr = new XMLHttpRequest();
   xhr.open("GET", "https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300", true);
   xhr.onreadystatechange = function() {
     if(xhr.readyState == 4 && xhr.status == 200) {
@@ -24,8 +24,8 @@ window.onload = function () {
       document.querySelector(".button-new-start").style.display = "block";
       document.querySelector('#button-send').disabled = true;
       document.querySelector('#number').disabled = true;
-      var elements = document.getElementsByClassName('segment'); 
-      for(var i = 0; i < elements.length; i++){
+      let elements = document.getElementsByClassName('segment'); 
+      for(let i = 0; i < elements.length; i++){
         elements[i].style.backgroundColor = "#CC3300";
       }
       displayThree.two();
@@ -356,7 +356,7 @@ function findNumber() {
   let separateNumbers = [];
   separateNumbers = inputValue.split("");
   let valueSortNumber = parseInt(inputValue)
-  console.log(valueSortNumber)
+  
   //Verificando se o número digitado pelo usuario ultrapassa o valor máximo de 300 ou é menor que 1
   if(valueSortNumber > 300 || valueSortNumber < 1){
     document.querySelector(".xd-message").classList.remove('hide')
@@ -493,11 +493,10 @@ function doNothing() {
 }
 
 // Lógica para a mensagem de alerta para o usuário que ultrapassar o valor estipulado pelo desafio
-var closesIcon = document.querySelectorAll('.xd-message .close-icon');
-
-  closesIcon.forEach(function(closeIcon) {
-    closeIcon.addEventListener('click', function() {
-      this.parentNode.parentNode.classList.add('hide');
-      document.querySelector(".input-number").value = "";
-    });
+let closesIcon = document.querySelectorAll('.xd-message .close-icon');
+closesIcon.forEach(function(closeIcon) {
+  closeIcon.addEventListener('click', function() {
+    this.parentNode.parentNode.classList.add('hide');
+    document.querySelector(".input-number").value = "";
   });
+});
