@@ -218,7 +218,7 @@
   }
   /* number start end */
 
-  /* button restart end */
+  /* button restart start */
   .container-button{
     margin-bottom: 73px;
     height: 42px;
@@ -246,7 +246,7 @@
   }
   /* button restart end */
 
-  /* form number end */
+  /* form number start */
   .input-number{
     width: 217px;
     height: 42px;
@@ -373,13 +373,31 @@
   }
   /* form number end */
 
-  @media only screen and (max-width: 600px) {
-      /* form number start */
-    .xd-message {
-      width: 80%;
-      height: 80%;
-    }
-      /* form number end */
+  @media only screen and (max-width: 425px) {
+  /* Title start */
+  .border{
+    margin-bottom: 75px;
+  }
+  /* Title end */
+
+  /* number start */
+  .container{
+    margin-bottom: 36px;
+  }
+  /* number start end */
+
+  /* button restart start */
+  .container-button{
+    margin-bottom: 53px;
+  }
+  /* button restart end */
+
+  /* form number start */
+  .xd-message {
+    width: 80%;
+    height: 80%;
+  }
+  /* form number end */
   }
 
   @media only screen and (min-width: 1024px) {
