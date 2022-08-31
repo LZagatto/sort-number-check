@@ -75,7 +75,7 @@
     font-weight: 700;
     line-height: 29px;
     letter-spacing: -1px;
-    text-align: left;
+    text-align: center;
     background: linear-gradient(174.92deg, var(--unnamed-color-EF6C00) 18.47%, var(--unnamed-color-DB6300) 36.57%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -91,7 +91,6 @@
 
   /* show message start */
   .show-message{
-    width: 200px;
     height: 45px;
     margin-bottom: 26px;
   }
@@ -377,8 +376,11 @@
 
   @media only screen and (max-width: 425px) {
   /* Title start */
+  .title{
+    margin-top: 40px ;
+  }
   .border{
-    margin-bottom: 75px;
+    margin-bottom: 45px;
   }
   /* Title end */
 
