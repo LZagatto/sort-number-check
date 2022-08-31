@@ -57,16 +57,19 @@
 
 <body>
   <section>
+    <!-- título do desafio -->
     <div>
       <h2 class="title">QUAL É O NÚMERO?</h2>
       <p class="border"></p>
     </div>
+    <!-- mensagem de retorno ao usuário -->
     <div class="show-message">
       <h1 class="you-won">Você acertou!!!!</h1>
       <h1 class="bigger-than">É maior</h1>
       <h1 class="smaller-than">É menor</h1>
       <h1 class="error">ERRO</h1>
     </div>
+    <!-- segmentos de led mostrando o número fornecido pelo usuário -->
     <div class="container">
       <div class="displayOne" id="one">
         <div class="segment bg-segment A1"></div>
@@ -96,9 +99,11 @@
         <div class="segment bg-segment G3"></div>
       </div>
     </div>
+    <!-- botão de reset / gera outro número sortido -->
     <div class="container-button">
       <button class="button-new-start" type="submit" onClick="window.location.reload();"><i class="bi bi-arrow-clockwise"></i>NOVA PARTIDA</button>
     </div>
+    <!-- formulário de envio do número que o usuário escolher -->
     <div>
       <form>
         <div>
@@ -107,6 +112,7 @@
         </div>
       </form>
     </div>
+    <!-- mensagem de aviso de limitação de caractere -->
     <div class="xd-message msg-warning">
       <div class="xd-message-icon">
         <i class="bi bi-exclamation-triangle"></i>
