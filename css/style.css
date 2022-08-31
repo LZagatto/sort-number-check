@@ -91,9 +91,11 @@
 
   /* show message start */
   .show-message{
-    height: 35px;
+    width: 80px;
+    height: 45px;
     margin-bottom: 26px;
   }
+  
 
   .bigger-than, .smaller-than,.error, .you-won{
     display: none;
